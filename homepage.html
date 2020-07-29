@@ -37,14 +37,15 @@
       style="max-width:550px;margin: 20px auto;flex-grow: 1;position: relative; width: 100%;"
     >
     <div class="postBox">
-      <input class="uploadButton" type="file" name="postfile" id="postfile" /><br>
+      <input class="uploadButton" type="file" name="postfile" id="postfile" onchange="loadFile(event)" /><br>
+      <img id="output" width="400" /><br>
       <div style="padding-bottom: 10px; padding-top: 10px;">
         <textarea id="postCaption" name="postCaption" placeholder="Write Caption Here......"></textarea><br>
       </div>
-      <button class="postButton" type="submit" onclick="post()">Post</button>
+      <button class="postButton" type="submit" onclick="post(event)">Post</button>
     </div><br>
     <div style="background-color:cornsilk; width:550px ; align-self: center;" id="postresult">
-
+      
     </div><br>
       <div style="background-color:cornsilk;">
         <div style="display:flex;flex-direction: column;">
@@ -517,13 +518,29 @@
         var caption=document.getElementById("postCaption");
         if (regex.test(fileUpload.value.toLowerCase())) {
             var result = document.getElementById("postresult");
-            var filename=fileUpload.value;
-            result.innerHTML = filename;
+            var res = "<a style=\"font-size:18px;font-style: \'serif\'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;\">Akshat Goyal</a><br><a>Location</a><img src=\"";
+            var file=URL.createObjectURL(fileUpload.files[0]);
+            res+=file;
+            res+="\" id=\"postoutput\" width=\"550\" />";
+            res+="<br><section style=\"display:flex;flex-direction:row;background-color: white;\"><button class = \"lcsButton\" onclick=\"\"><img src=\".//images/not-liked.png\"sizes=\"40px\"decoding=\"auto\" class=\"buttonImage\" /></button><buttonclass = \"lcsButton\" onclick=\"\"><img src=\".//images/comment.png\"sizes=\"40px\"decoding=\"auto\" class=\"buttonImage\"/></button><button class = \"lcsButton\" onclick=\"\"><img src=\".//images/share.png\"sizes=\"40px\" decoding=\"auto\" class=\"buttonImage\"/></button></section>";
+            var rows = caption.value.split("\n");
+            for(var i1 = 0; i1 < rows.length; i1++){
+              res+=rows[i1];
+              res+="<br>";
+            }
+            res+="<br><textarea style=\"resize:none;max-height:80px;outline:0;height:28px;width:540px\" placeholder=\"Type comment here...\"></textarea><br><button class=\"postButton\" type=\"submit\" value=\"Comment\">Comment</button>";
+            result.innerHTML = res;
         }
         else{
           alert("Please upload a valid file format.");
         }
       }
+      var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+        return image.src;
+      };
     </script>
+
   </body>
 </html>
