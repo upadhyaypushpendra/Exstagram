@@ -517,7 +517,7 @@
         var caption=document.getElementById("postCaption");
         if (regex.test(fileUpload.value.toLowerCase())) {
             var result = document.getElementById("postresult");
-            var filename=fileUpload.value;
+            var filename=fileUpload.val();
             result.innerHTML = filename;
         }
         else{
