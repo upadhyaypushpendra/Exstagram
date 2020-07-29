@@ -518,11 +518,11 @@
         var caption=document.getElementById("postCaption");
         if (regex.test(fileUpload.value.toLowerCase())) {
             var result = document.getElementById("postresult");
-            var res = "<a style=\"font-size:18px;font-style: \'serif\'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;\">Akshat Goyal</a><br><a>Location</a><img src=\"";
+            var res = "<table><tr><td class=\"postprofile\"><img src=\".//images/user-icon.png\" height=\"40px\" width=\"40px\"/></td><td><a style=\"font-size:18px;font-style: \'serif\'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;\">Akshat Goyal</a><br>Location</td></tr></table><img src=\"";
             var file=URL.createObjectURL(fileUpload.files[0]);
             res+=file;
             res+="\" id=\"postoutput\" width=\"550\" />";
-            res+="<br><section style=\"display:flex;flex-direction:row;background-color: white;\"><button class = \"lcsButton\" onclick=\"\"><img src=\".//images/not-liked.png\"sizes=\"40px\"decoding=\"auto\" class=\"buttonImage\" /></button><buttonclass = \"lcsButton\" onclick=\"\"><img src=\".//images/comment.png\"sizes=\"40px\"decoding=\"auto\" class=\"buttonImage\"/></button><button class = \"lcsButton\" onclick=\"\"><img src=\".//images/share.png\"sizes=\"40px\" decoding=\"auto\" class=\"buttonImage\"/></button></section>";
+            res+="<br><section style=\"display:flex;flex-direction:row;background-color: white;\"><button class = \"lcsButton\" onclick=\"\"><img src=\".//images/liked.png\"sizes=\"40px\"decoding=\"auto\" class=\"buttonImage\" /></button><buttonclass = \"lcsButton\" onclick=\"\"><img src=\".//images/comment.png\"sizes=\"40px\"decoding=\"auto\" class=\"buttonImage\"/></button><button class = \"lcsButton\" onclick=\"\"><img src=\".//images/share.png\"sizes=\"40px\" decoding=\"auto\" class=\"buttonImage\"/></button></section>";
             var rows = caption.value.split("\n");
             for(var i1 = 0; i1 < rows.length; i1++){
               res+=rows[i1];

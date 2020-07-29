@@ -72,3 +72,8 @@ textarea {
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
+.postprofile{
+	border: 2px black solid;
+	border-radius: 40px;
+	padding: 10px;
+}
