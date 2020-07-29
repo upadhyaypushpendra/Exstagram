@@ -1,0 +1,38 @@
+.tabButton{
+	font-family: serif;
+	font-size: 20px;
+	border-style: none solid none none;
+	background-color:burlywood;
+	width:25%;
+	height: 6vh;
+	outline:none;
+}
+.tabButton:active{
+	height:37px;
+	border-style:none;
+}
+.tabButton:hover{
+	background-color:cornsilk;
+}
+.lcsButton{
+	font-family: serif;
+	font-size: 20px;
+	border-style:none;
+	background-color:white;
+	width:50px;
+	height: 50px;
+	outline:none;
+}
+.lcsButton:hover{
+	cursor:pointer;
+}
+
+.buttonImage{
+	object-fit: cover;
+	width:40px;
+	height:40px;
+}
+.buttonImage:active{
+	width:37px;
+	height:37px;
+}
