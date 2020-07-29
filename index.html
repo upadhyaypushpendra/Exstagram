@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link rel="stylesheet" href="./css/index.css">
+    <script>
+      function showForm(id)
+      {
+        if(id==1) 
+        {
+          document.getElementById("log-in-form").style.display="block";
+          document.getElementById("sign-up-form").style.display="none";
+        }
+        if(id==2) {
+          document.getElementById("sign-up-form").style.display="block";
+          document.getElementById("log-in-form").style.display="none";
+        }
+      }
+      </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exstagram</title>
+  </head>
+  <body>
+    <header style="padding-top:2px;height:160px;background-color:burlywood">
+      <table>
+        <tr>
+          <td><img src="./images/logo.png" /></td>
+          <td>
+            <font style="font-size:100px;">Exstagram</font>
+          </td>
+        </tr>
+      </table>
+    </header>
+    <div style="">
+		<section id="main-wrapper" class="main-wrapper">
+			<div id="main" class="main" >
+			<div id="toggle-buttons-div" class="toggle-button-div" >
+				<div id="login-toggle-button-wrapper" class="form-toggle-button-wrapper" >
+					<button class="toggle-button" onclick="showForm(1)">Log in </button>
+				</div>
+				<div id="signup-toggle-button-wrapper" class="form-toggle-button-wrapper">
+					<button class="toggle-button" onclick="showForm(2)">Sign up </button>
+				</div>
+			</div>
+        <!-- Log-in-form -->
+		<div id="form-wrapper" class="form-wrapper">
+			<form  id="log-in-form" class="log-in-form"  action=".//homepage.html">
+				<input placeholder="Username" type="text" class="form-text-box" />
+				<input placeholder="Password" type="password" class="form-password-box"/>
+				<button class="form-button" > Login </button>
+			</form>
+      <!-- Log-in-form -->
+      <!-- Sign-up-form -->
+			<form id="sign-up-form" class="sign-up-form" action="./homepage.html">
+				<input placeholder="Username" type="text" class="form-text-box" />
+				<input placeholder="Password" type="password" class="form-password-box" />
+				<input placeholder="Confirm Password" type="password" class="form-password-box" />
+				<button id="form-sign-up-button" class="form-button" > Sign up </button>
+        </form>
+        </div>
+      <!-- Sign-up-form -->
+		</div>
+		</section>
+	</div>
+  </body>
+</html>

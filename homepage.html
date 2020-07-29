@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+	<link rel="stylesheet" href="./css/homepage.css">
+	<script>
+	function postComment()
+	{
+	// Have to be think
+	}
+	function changeTab(tabIndex)
+	{
+	if(tabIndex==1) window.location = "./homepage.html";
+	if(tabIndex==2) window.location = "./explore.html";
+	if(tabIndex==3) window.location = "./chat.html";
+	if(tabIndex==4) window.location = "./settings.html";
+	}
+	</script>
+  </head>
+  <body>
+    <header style="padding:10px;height:8vh;background-color:burlywood;display:flex;flex-direction:row">
+	<div>
+      <img style=";width:50px;height:50px;" src=".//images/logo.png" />
+     </div>
+	 <div>
+            <font style="margin-top:5px;font-size:50px">Exstagram</font>
+     </div>
+	 <div style="position:relative; margin-top:5px;margin-left:75%;">
+      <a href="./index.html"> Logout </a>
+    </div>
+    </header>
+    
+    <section
+      style="max-width:550px;margin: 20px auto;flex-grow: 1;position: relative; width: 100%;"
+    >
+      <div style="background-color:cornsilk;">
+        <div style="display:flex;flex-direction: column;">
+        <article>
+		  
+            <header style="display:flex;height: 60px;flex-direction: row;">
+              <div style="padding:15px;">
+                <div
+                  style="width:fit-content;height:fit-content;position: relative;"
+                >
+                  <a
+                    href="./homepage.html"
+                    style="font-size:18px;font-style: 'serif'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;"
+                  >
+                    Pushpendra Upadhyay
+                  </a>
+                </div>
+                <div>
+                  <span style="font-size:14px;font-style: 'Times New Roman'">
+                    Location
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div>
+              <img
+                src="./images/12.jpg"
+                sizes="550px"
+                decoding="auto"
+                style="object-fit: cover;width:550px;height:550px;"
+              />
+            </div>
+            <div>
+              <section
+                style="display:flex;flex-direction:row;background-color: white;"
+              >
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/not-liked.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/comment.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/share.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+              </section>
+			  <section style="background-color: white;">
+			  <div id="likesCount">
+			  0 Likes
+			  </div>
+			  </section >
+			  <section style="background-color: white;">
+			  <div id="commentSection">
+				<div style="display:flex;flex-direction:row;">
+				<form id="commentForm" action="" style="align-items:center;display:flex;flex-direction:row;flex-grow:1:flex-shrink:1">
+				<textarea style="resize:none;max-height:80px;outline:0;height:28px;width:550px" placeholder="Type comment here..."> </textarea>
+				<button class="lcsButton" style="position:relative;height:28px;max-height:80px;text-align:center;background:none;border-style:none;"> Post </button>
+				</form>
+				<div>
+			  </div>
+			  </section>
+			  
+            </div>
+          </article>
+		  <article>
+		  
+            <header style="display:flex;height: 60px;flex-direction: row;">
+              <div style="padding:15px;">
+                <div
+                  style="width:fit-content;height:fit-content;position: relative;"
+                >
+                  <a
+                    href="./homepage.html"
+                    style="font-size:18px;font-style: 'serif'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;"
+                  >
+                    Pushpendra Upadhyay
+                  </a>
+                </div>
+                <div>
+                  <span style="font-size:14px;font-style: 'Times New Roman'">
+                    Location
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div>
+              <img
+                src="./images/10.jpg"
+                sizes="550px"
+                decoding="auto"
+                style="object-fit: cover;width:550px;height:550px;"
+              />
+            </div>
+            <div>
+              <section
+                style="display:flex;flex-direction:row;background-color: white;"
+              >
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/not-liked.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/comment.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/share.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+              </section>
+			  <section style="background-color: white;">
+			  <div id="likesCount">
+			  0 Likes
+			  </div>
+			  </section >
+			  <section style="background-color: white;">
+			  <div id="commentSection">
+				<div style="display:flex;flex-direction:row;">
+				<form id="commentForm" action="" style="align-items:center;display:flex;flex-direction:row;flex-grow:1:flex-shrink:1">
+				<textarea style="resize:none;max-height:80px;outline:0;height:28px;width:550px" placeholder="Type comment here..."> </textarea>
+				<button class="lcsButton" style="position:relative;height:28px;max-height:80px;text-align:center;background:none;border-style:none;"> Post </button>
+				</form>
+				<div>
+			  </div>
+			  </section>
+			  
+            </div>
+          </article>
+		  <article>
+		  
+            <header style="display:flex;height: 60px;flex-direction: row;">
+              <div style="padding:15px;">
+                <div
+                  style="width:fit-content;height:fit-content;position: relative;"
+                >
+                  <a
+                    href="./homepage.html"
+                    style="font-size:18px;font-style: 'serif'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;"
+                  >
+                    Pushpendra Upadhyay
+                  </a>
+                </div>
+                <div>
+                  <span style="font-size:14px;font-style: 'Times New Roman'">
+                    Location
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div>
+              <img
+                src="./images/6.jpg"
+                sizes="550px"
+                decoding="auto"
+                style="object-fit: cover;width:550px;height:550px;"
+              />
+            </div>
+            <div>
+              <section
+                style="display:flex;flex-direction:row;background-color: white;"
+              >
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/not-liked.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/comment.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/share.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+              </section>
+			  <section style="background-color: white;">
+			  <div id="likesCount">
+			  0 Likes
+			  </div>
+			  </section >
+			  <section style="background-color: white;">
+			  <div id="commentSection">
+				<div style="display:flex;flex-direction:row;">
+				<form id="commentForm" action="" style="align-items:center;display:flex;flex-direction:row;flex-grow:1:flex-shrink:1">
+				<textarea style="resize:none;max-height:80px;outline:0;height:28px;width:550px" placeholder="Type comment here..."> </textarea>
+				<button class="lcsButton" style="position:relative;height:28px;max-height:80px;text-align:center;background:none;border-style:none;"> Post </button>
+				</form>
+				<div>
+			  </div>
+			  </section>
+			  
+            </div>
+          </article>
+		  <article>
+		  
+            <header style="display:flex;height: 60px;flex-direction: row;">
+              <div style="padding:15px;">
+                <div
+                  style="width:fit-content;height:fit-content;position: relative;"
+                >
+                  <a
+                    href="./homepage.html"
+                    style="font-size:18px;font-style: 'serif'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;"
+                  >
+                    Pushpendra Upadhyay
+                  </a>
+                </div>
+                <div>
+                  <span style="font-size:14px;font-style: 'Times New Roman'">
+                    Location
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div>
+              <img
+                src="./images/11.jpg"
+                sizes="550px"
+                decoding="auto"
+                style="object-fit: cover;width:550px;height:550px;"
+              />
+            </div>
+            <div>
+              <section
+                style="display:flex;flex-direction:row;background-color: white;"
+              >
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/not-liked.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/comment.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/share.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+              </section>
+			  <section style="background-color: white;">
+			  <div id="likesCount">
+			  0 Likes
+			  </div>
+			  </section >
+			  <section style="background-color: white;">
+			  <div id="commentSection">
+				<div style="display:flex;flex-direction:row;">
+				<form id="commentForm" action="" style="align-items:center;display:flex;flex-direction:row;flex-grow:1:flex-shrink:1">
+				<textarea style="resize:none;max-height:80px;outline:0;height:28px;width:550px" placeholder="Type comment here..."> </textarea>
+				<button class="lcsButton" style="position:relative;height:28px;max-height:80px;text-align:center;background:none;border-style:none;"> Post </button>
+				</form>
+				<div>
+			  </div>
+			  </section>
+			  
+            </div>
+          </article>
+		  <article>
+		  
+            <header style="display:flex;height: 60px;flex-direction: row;">
+              <div style="padding:15px;">
+                <div
+                  style="width:fit-content;height:fit-content;position: relative;"
+                >
+                  <a
+                    href="./homepage.html"
+                    style="font-size:18px;font-style: 'serif'; font-weight:  bold;color:black;border-color: transparent;text-decoration: none;"
+                  >
+                    Pushpendra Upadhyay
+                  </a>
+                </div>
+                <div>
+                  <span style="font-size:14px;font-style: 'Times New Roman'">
+                    Location
+                  </span>
+                </div>
+              </div>
+            </header>
+            <div>
+              <img
+                src="./images/8.jpg"
+                sizes="550px"
+                decoding="auto"
+                style="object-fit: cover;width:550px;height:550px;"
+              />
+            </div>
+            <div>
+              <section
+                style="display:flex;flex-direction:row;background-color: white;"
+              >
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/not-liked.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/comment.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+                <button
+                  class = "lcsButton"
+                  onclick=""
+                >
+                  <img
+                    src=".//images/share.png"
+                    sizes="40px"
+                    decoding="auto"
+                    class="buttonImage"
+                  />
+                </button>
+              </section>
+			  <section style="background-color: white;">
+			  <div id="likesCount">
+			  0 Likes
+			  </div>
+			  </section >
+			  <section style="background-color: white;">
+			  <div id="commentSection">
+				<div style="display:flex;flex-direction:row;">
+				<form id="commentForm" action="" style="align-items:center;display:flex;flex-direction:row;flex-grow:1:flex-shrink:1">
+				<textarea style="resize:none;max-height:80px;outline:0;height:28px;width:550px" placeholder="Type comment here..."> </textarea>
+				<button class="lcsButton" style="position:relative;height:28px;max-height:80px;text-align:center;background:none;border-style:none;"> Post </button>
+				</form>
+				<div>
+			  </div>
+			  </section>
+			  
+            </div>
+          </article>
+	   </div>
+      </div>
+    
+	</section>
+    <section>
+      <div style="height:45px"></div>
+    </section>
+    <footer style="font-size:0px;position: fixed;bottom: 0;left:0;width: 100%;">
+      <nav>
+        <button
+		  class ="tabButton"
+          onclick="changeTab(1)"
+        >
+          Home
+        </button>
+        <button
+		  class ="tabButton"
+          onclick="changeTab(2)"
+        >
+          Explore
+        </button>
+        <button
+		  class ="tabButton"
+          onclick="changeTab(3)"
+        >
+          Chat
+        </button>
+        <button
+		  class ="tabButton"
+          onclick="changeTab(4)"
+        >
+          Settings
+        </button>
+      </nav>
+    </footer>
+  </body>
+</html>
