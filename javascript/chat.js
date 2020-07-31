@@ -16,7 +16,7 @@ function getSentMessage(message,id){
 	var messageWrapper=document.createElement('div');
 	messageWrapper.setAttribute('class','message-wrapper');
 	messageWrapper.setAttribute('id',id);
-	var messageDiv=document.createElement('div');
+	var messageDiv=document.createElement('p');
 	messageDiv.setAttribute('id',id);
 	messageDiv.innerHTML=message;
 	messageDiv.setAttribute('class','sent-message');
