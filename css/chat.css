@@ -1,8 +1,8 @@
 .wrapper-left {
-min-width:350px;height:70vh;border-width:1px;border-style:none solid none none;
+min-width:335px;height:82vh;border-width:1px;border-style:none solid none none;
 }
 .wrapper-right {
-	width:100%;height:70vh;
+	width:100%;height:82vh;
 }
 .main-left{
 	display:flex;flex-direction:column;width:100%;height:100%;display:flex;flex-direction:column;
@@ -89,14 +89,14 @@ flex:2 1 auto;width:100%;height:100%;overflow:hidden;
 	margin:2px 0px 2px 2px;
 }
 .sent-message{
-	padding:10px;
+	padding:15px;
 	font-size:16px;
-	background-color:white;
 	max-width:300px;
 	height:auto;
 	float:right;
 	border-radius:20px 20px 2px 20px;
-	border:1px solid black;
+	background: rgba(var(--bb2,239,239,239),1);
+	margin:2px;
 }
 .received-message{
 	padding:5px 10px 5px 10px;
