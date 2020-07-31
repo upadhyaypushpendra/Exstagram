@@ -20,58 +20,89 @@
 	</script>
   </head>
   <body>
-  <div style="height:100%;width:100%;display:flex;flex-direction:column;overflow:hidden;">
-    <div style="padding:10px;height:8vh;background-color:burlywood;display:flex;flex-direction:row">
-	
-	<div>
-      <img style=";width:50px;height:50px;" src=".//images/logo.png" />
-     </div>
-	 <div>
-            <font style="margin-top:5px;font-size:50px">Exstagram</font>
-     </div>
-	 <div style="position:relative; margin-top:5px;margin-left:75%;">
-      <a href="./index.html"> Logout </a>
-    </div>
-    </div>
-		<div style="height:100%:width:100%;">
-			<div style="height:100%:width:100%;padding:5vh;">
+  <div style="height:100%;width:100%;display:flex;flex-direction:column;overflow:hidden;color: rgba(var(--i1d,38,38,38),1)">
+    <nav style="padding:10px;height:8vh;background-color: rgba(var(--b3f,250,250,250),1);border:2px solid black;border-style:none none solid none;">
+	<div style="padding:0px 100px">
+		<div id="navigation" style="flex:2 1 auto;display:flex;flex-direction:row;padding:0px 20px;align-items:center;" >	
+			<div style="margin:5px" >
+				<img width="50px" height="50px" src=".//images/logo.png" />
+			</div>
+			<div style="flex:1 1 auto;padding:0px 20px;margin:10px;font-size:30px;" >
+				Exstagram
+			</div>
+			<div style="display:flex;flex-direction:row;padding:0px 30px;" >
+				<div id="home-icon-wrapper" style="padding:0px 10px;"  >
+					<a href="./homepage.html">
+						<img width="30px;" height="30px" src="./images/home-icon.png" />
+					</a>
+				</div>
+				<div id="chat-icon-wrapper" style="padding:0px 10px;">
+					<a href="./chat.html">
+					<img width="30px;" height="30px" src="./images/chat-icon.png" />
+					</a>
+				</div>
+				<div id="explore-icon-wrapper" style="padding:0px 10px;">
+					<a href="./explore.html">
+						<img width="30px;" height="30px" src="./images/explore-icon.png" />
+					</a>
+				</div>
+				<div id="activity-icon-wrapper" style="padding:0px 10px;">
+					<a href="./images/activity.html" >
+					<img width="30px;" height="30px" src="./images/activity-icon.png" />
+					</a>
+				</div>
+				<div id="profile-icon-wrapper" style="padding:0px 10px;border-radius:50%;">
+					<a href="./settings.html" >
+						<img style="border-radius:50%;border:1px solid black;" width="30px;" height="30px" src="./images/user-icon.png" />
+					</a>
+				</div>
+			</div>
+			<div style="position:relative; margin-top:5px;">
+				<a href="./index.html"> Logout </a>
+			</div>	
+		</div>
+		
+	</div>
+    </nav>
+		<div style="flex:2 1 auto;height:100%:width:100%;">
+			<div style="height:100%:width:100%;padding:2vh 25vh;">
 				<div style="height:100%;width:100%;" >
-					<div style="height: calc(100% - 40px);width:100%;border:1px solid black;display:flex;flex-direction:row;">
-						<div id="wrapper-left" style="min-width:350px;height:70vh;border-width:1px;border-style:none solid none none;">
-							<div id="main-left" style="display:flex;flex-direction:column;width:100%;height:100%;display:flex;flex-direction:column;" >
-								<div id="search-box" style="min-height:70px;border-style:none none solid none;border-width:1px;background-color:cornsilk;" >
-									<input type="text" id="search-text-box" oninput="searchFriend(this.value)" placeholder="Search..." style="font-size:14px;margin:15px;padding:10px;width: calc(100% - 55px);border:1px solid black;border-radius:10px;outline:none;background:transparent;" >
+					<div style="height:100%;width:100%;border:1px solid black;display:flex;flex-direction:row;">
+						<div id="wrapper-left" class="wrapper-left" >
+							<div id="main-left" class="main-left" >
+								<div id="search-box" class="search-box" >
+									<input type="text" id="search-text-box" oninput="searchFriend(this.value)" placeholder="Search..." class="search-text-box" >
 								</div>
-							<div id="user-list-left" style="margin:0px;overflow:hidden auto;" >
+							<div id="user-list-left" class="user-list-left" >
 							</div>
 							</div>
 						</div>
-						<div id="wrapper-right" style="width:100%;height:70vh;" >
-							<div id="main-right" style="display:flex;flex-direction:column;width:100%;height:100%;display:flex;flex-direction:column;">
-								<div id="active-user-name-wrapper" style="width:100%;height:70px;border-style:none none solid none;border-width:1px;display:flex;flex-direction:row;" >
-									<div id="active-user-icon-wrapper" style="margin:5px;" >
-										<img id="active-user-icon" src="./images/user-icon.png" width="50px" height="50px" style="padding:5px;border:1px solid black;border-radius:50px;" > </img>
+						<div id="wrapper-right" class="wrapper-right" >
+							<div id="main-right" class="main-right">
+								<div id="header-right" class="header-right" >
+									<div id="active-user-icon-wrapper" class="active-user-icon-wrapper" >
+										<img id="active-user-icon" src="./images/user-icon.png" width="50px" height="50px" class="active-user-icon" > </img>
 									</div>
-									<div id="active-user-name-wrapper" style="width: calc(100% - 90px);margin:5px;padding:5px;display:flex;flex-direction:column;" >
-										<div id="active-user-name" style="height:20px;padding:5px 10px;" >
-											Active user
+									<div id="active-user-name-wrapper" class="active-user-name-wrapper" >
+										<div id="active-user-name" class="active-user-name" >
+											
 										</div>
-										<div id="active-status" style="font-size:11px;padding:0px 10px;color:burlywood;" >
-											Active Now
-										</div>
-									</div>
-								</div>
-								<div id="message-area-wrapper" style="flex:2 1 auto;width:100%;height:100%;overflow:hidden;" >
-									<div id="message-area-scroll" style="height:100%;overflow-y:auto;">
-										<div id="message-area" style="display:flex;flex-direction:column;justify-content:flex-end;margin:10px;height:100%;">
+										<div id="active-status" class="active-status" >
 											
 										</div>
 									</div>
 								</div>
-								<div id="message-box-wrapper" style="flex:0 0 auto;" >
-									<div id="message-box;" style="padding:10px;display:flex;flex-direction:row;border:1px solid black;border-radius:15px;margin:15px;" >
-										<textarea id="message-textarea" onkeyup="checkEnter(this)" placeholder="Message..." style="background-color:transparent;border:0;overflow:auto;padding:8px 9px;resize:none;outline:none;flex: 1 1 auto;line-height:18px;height:18px;" ></textarea>
-										<button id="send-button" onclick="sendMessage()" style="background:none;color:blue;padding:8px 9px;outline:none;border:none;cursor:pointer;font: 400 13.3333px Arial;"  >Send</button>
+								<div id="message-area-wrapper" class="message-area-wrapper" >
+									<div id="message-area-scroll" style="height:100%;overflow-y:auto;">
+										<div id="message-area" class="message-area">
+
+										</div>
+									</div>
+								</div>
+								<div id="message-box-wrapper" class="message-box-wrapper">
+									<div id="message-box;" class="message-box" >
+										<textarea id="message-textarea" onkeyup="checkEnter(this)" placeholder="Message..." class="message-textarea" ></textarea>
+										<button id="send-button" onclick="sendMessage()" class="send-button"  >Send</button>
 									</div>
 								</div>
 								</div>
@@ -80,37 +111,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
-    
-    <div style="font-size:0px;width: 100%;">
-      <nav>
-        <button
-		  class ="tabButton"
-          onclick="changeTab(1)"
-        >
-          Home
-        </button>
-        <button
-		  class ="tabButton"
-          onclick="changeTab(2)"
-        >
-          Explore
-        </button>
-        <button
-		  class ="tabButton"
-          onclick="changeTab(3)"
-        >
-          Chat
-        </button>
-        <button
-		  class ="tabButton"
-          onclick="changeTab(4)"
-        >
-          Settings
-        </button>
-      </nav>
-    </div>
+		</div>    
   </div>
   </body>
 </html>
