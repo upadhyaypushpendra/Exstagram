@@ -36,3 +36,44 @@
 	width:37px;
 	height:37px;
 }
+.uploadButton{
+	border: thin black 1px;
+	background-color:cornsilk;
+}
+.uploadButton:hover{
+	background-color: burlywood;
+	cursor: pointer;
+}
+textarea {
+	resize: none;
+	columns: 60;
+	height: 100px;
+	width:400px;
+}
+.postButton{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width:100px;
+	height:40px;
+	background-color:cornsilk;
+
+}
+.postButton:hover{
+	background-color:burlywood;
+}
+.postBox{
+	max-height:600px; 
+	width: 530px; 
+	background-color: cornsilk; 
+	border: solid; 
+	border-color: black;
+	border-width: 2px; 
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.postprofile{
+	border: 2px black solid;
+	border-radius: 40px;
+	padding: 10px;
+}
